@@ -17,7 +17,7 @@ export function loginPage() {
         src="${mapApp}"
         class="hidden lg:block w-1/2 hover:scale-150 transition-all duration-500 transform mx-auto"
       />
-      <form class="flex flex-col justify-center items-center w-1/2">
+      <form class="flex flex-col justify-center items-center w-1/2 mx-auto -translate-x-3">
         <img src="${logo}" class="w-3/4" />
         <h2
           class="my-8 font-display font-bold text-3xl text-gray-700 text-center"
@@ -40,8 +40,8 @@ export function loginPage() {
             class="pl-8 border-b-2 font-display focus:outline-none focus:border-primarycolor transition-all duration-500 capitalize text-lg"
           />
         </div>
-        <a href="#" class="self-end mt-4 text-gray-600 font-bold"
-          >Forgot password?</a
+        <a href="/register" class="self-end mt-4 text-gray-600 font-bold"
+          >No tienes una cuenta?</a
         >
         <a
           href="#"

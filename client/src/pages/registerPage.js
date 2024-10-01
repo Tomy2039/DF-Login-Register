@@ -18,7 +18,7 @@ export function registerPage() {
         src="${register}"
         class="hidden lg:block w-1/2 hover:scale-150 transition-all duration-500 transform mx-auto"
       />
-      <form class="flex flex-col justify-center items-center w-1/2">
+      <form class="flex flex-col justify-center items-center w-1/2 mx-auto -translate-x-3">
         <img src="${logo}" class="w-3/4" />
         <h2
           class="my-8 font-display font-bold text-3xl text-gray-700 text-center"
