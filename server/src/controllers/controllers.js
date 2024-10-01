@@ -10,10 +10,10 @@ export const register = async (req, res) => {
             return res.status(400).json({message: "Este usuario ya existe"})
         }
 
-        const salt = await bcrypt.genSalt(10);
-        const hashedPassword = await bcrypt.hash(password, salt);
+        // const salt = await bcrypt.genSalt(10);
+        const hashedPassword = await bcrypt.hash(password, 10);
 
-        const newUser = new User({ name, password: hashedPassword , email });
+        const newUser = new User({ name:name, password: hashedPassword , email:email });
         await newUser.save();
         res.json({ message: "Usuario registrado con exito"});
     } catch (error) {
